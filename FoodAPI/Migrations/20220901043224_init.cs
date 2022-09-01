@@ -4,7 +4,7 @@
 
 namespace FoodAPI.Migrations
 {
-    public partial class CloudCreate : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

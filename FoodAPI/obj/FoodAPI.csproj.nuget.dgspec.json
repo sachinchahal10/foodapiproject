@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\old dell i7\\ZSprint2\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj": {}
+    "C:\\Users\\sachi\\Desktop\\food project\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj": {}
   },
   "projects": {
-    "E:\\old dell i7\\ZSprint2\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj": {
+    "C:\\Users\\sachi\\Desktop\\food project\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\old dell i7\\ZSprint2\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sachi\\Desktop\\food project\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj",
         "projectName": "FoodAPI",
-        "projectPath": "E:\\old dell i7\\ZSprint2\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj",
+        "projectPath": "C:\\Users\\sachi\\Desktop\\food project\\Project-1\\FoodAPI\\FoodAPI\\FoodAPI.csproj",
         "packagesPath": "C:\\Users\\sachi\\.nuget\\packages\\",
-        "outputPath": "E:\\old dell i7\\ZSprint2\\Project-1\\FoodAPI\\FoodAPI\\obj\\",
+        "outputPath": "C:\\Users\\sachi\\Desktop\\food project\\Project-1\\FoodAPI\\FoodAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,17 +42,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

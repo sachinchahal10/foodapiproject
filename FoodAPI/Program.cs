@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using FoodAPI.Data;
-var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FoodAPIContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FoodAPIContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FoodAPIContext") ?? throw new InvalidOperationException("Connection string 'FoodAPIContext' not found.")));
+
+
 
 // Add services to the container.
 

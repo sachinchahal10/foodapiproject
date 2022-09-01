@@ -1,5 +1,4 @@
-﻿#nullable disable
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -26,6 +25,10 @@ namespace FoodAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Food>>> GetFood()
         {
+          if (_context.Food == null)
+          {
+              return NotFound();
+          }
             return await _context.Food.ToListAsync();
         }
 
@@ -33,6 +36,10 @@ namespace FoodAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Food>> GetFood(int id)
         {
+          if (_context.Food == null)
+          {
+              return NotFound();
+          }
             var food = await _context.Food.FindAsync(id);
 
             if (food == null)
@@ -79,6 +86,10 @@ namespace FoodAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Food>> PostFood(Food food)
         {
+          if (_context.Food == null)
+          {
+              return Problem("Entity set 'FoodAPIContext.Food'  is null.");
+          }
             _context.Food.Add(food);
             try
             {
@@ -103,6 +114,10 @@ namespace FoodAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFood(int id)
         {
+            if (_context.Food == null)
+            {
+                return NotFound();
+            }
             var food = await _context.Food.FindAsync(id);
             if (food == null)
             {
@@ -117,7 +132,7 @@ namespace FoodAPI.Controllers
 
         private bool FoodExists(int id)
         {
-            return _context.Food.Any(e => e.id == id);
+            return (_context.Food?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

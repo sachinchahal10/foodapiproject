@@ -1,5 +1,4 @@
-﻿#nullable disable
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,6 +14,6 @@ namespace FoodAPI.Data
         {
         }
 
-        public DbSet<FoodAPI.Models.Food> Food { get; set; }
+        public DbSet<FoodAPI.Models.Food> Food { get; set; } = default!;
     }
 }
